@@ -14,32 +14,32 @@ const ReactBD = () => {
         <span className="tracking-wide text-textGreen">- NamuLabs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
-        Oct 2024 - present
+        Oct 2024 - in view
       </p>
       <ul className="flex flex-col gap-3 mt-6">
         <li className="flex gap-2 text-base text-textDark">
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Translated high-fidelity UI/UX prototypes into functional, interactive
-          web pages using Next.js, Tailwind CSS, and MUI.
+          Built intuitive, pixel-perfect user interfaces for decentralized
+          applications using Next.js, TypeScript, and Tailwind CSS.
         </li>
         <li className="flex gap-2 text-base text-textDark">
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Designed and developed both user and admin dashboards, ensuring a
-          seamless experience for different user roles. Integrated APIs
-          efficiently, enabling smooth communication between the frontend and
-          backend for optimal functionality.
+          Refactored and optimized a legacy codebase, reducing load times by
+          20%. Developed and integrated new features into pre-existing
+          blockchain apps, improving user engagement by 15%.
         </li>
         <li className="flex gap-2 text-base text-textDark">
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Worked closely with Product Managers, UX Designers, and Backend
-          Engineers to analyze requirements, strategize product design, and
-          implement key features.
+          Designed and implemented a scalable design system, ensuring consistent
+          branding across all products. Collaborated cross-functionally with
+          developers, product designers, and project leads to meet tight project
+          deadlines.
         </li>
       </ul>
     </motion.div>
