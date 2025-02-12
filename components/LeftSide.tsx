@@ -12,7 +12,7 @@ const LeftSide = () => {
           </span>
         </a>
         <a
-          href="https://www.linkedin.com/in/favour-emmanuel-183226161/"
+          href="https://www.linkedin.com/in/favour-em"
           target="_blank"
         >
           <span className="inline-flex items-center justify-center w-10 h-10 text-xl transition-all duration-300 rounded-full cursor-pointer bg-hoverColor hover:text-textGreen hover:-translate-y-2">
