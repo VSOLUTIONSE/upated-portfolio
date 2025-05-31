@@ -11,7 +11,6 @@ const Archive = () => {
         <h2 className="text-3xl font-semibold text-center sml:text-left font-titleFont">
           Other Projects archive
         </h2>
-        
       </div>
       <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3 lgl:px-10">
         <ArchiveCard
@@ -20,17 +19,18 @@ const Archive = () => {
           listItem={["Reactjs", "firebase", "react-router"]}
           link="https://the-review-library.vercel.app/"
         />
-        <ArchiveCard
-          title="ChowAfrica Landing Page"
-          des="A Landing page to add prospective customers to Food service waitlist."
-          listItem={["Nextjs", "Tailwind CSS", "Typscript"]}
-          link="https://frontend-favour-test.vercel.app/"
-        />
+
         <ArchiveCard
           title="T-hub"
           des="Integrated a flutterwave payment functionality for this medium scale business and co-working space"
-          listItem={["React", "MUI","firebase", "flutterwave"]}
+          listItem={["React", "MUI", "firebase", "flutterwave"]}
           link="https://t-hub.tongston.com"
+        />
+        <ArchiveCard
+          title="ChowAfrica Landing Page"
+          des="An intuitive Landing page to add prospective customers to Food service waitlist."
+          listItem={["Nextjs", "Tailwind CSS", "Typscript"]}
+          link="https://frontend-favour-test.vercel.app/"
         />
         {/* <ArchiveCard
           title="Amazon Clone with login, cart-option and payment intrigation."

@@ -10,11 +10,18 @@ const Contact = () => {
         Have an idea?
       </p>
       <h2 className="text-4xl font-semibold sml:text-5xl font-titleFont">Get In Touch</h2>
-      <p className="max-w-[600px] text-center text-textDark">
+      {/* <p className="max-w-[600px] text-center text-textDark">
         Looking for a frontend developer to bring your vision to life? Whether
         it’s crafting pixel-perfect UIs, building scalable apps, or
         optimizing performance. I am always open to new opportunities,
         collaborations, and discussions on building exceptional digital
+        experiences.
+      </p> */}
+      <p className="max-w-[600px] text-center text-textDark">
+       
+        I crafting pixel-perfect UIs, build scalable apps, and 
+        optimize performance. I am always open to new opportunities,
+        collaborations, and mentorship on building exceptional digital
         experiences.
       </p>
 

@@ -39,8 +39,8 @@ const Projects = () => {
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
               NinoHair provides Africans women with the easiest and convenient
-              way to purchase luxury hairs,built the auth flow,admin dashboards
-              and collaborated on overall app functionality.
+              way to purchase luxury hairs, built the auth flow, admin dashboards
+              and integrated backend api&apos;s for overall app functionality.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>

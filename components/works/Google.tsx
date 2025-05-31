@@ -9,7 +9,7 @@ const Google = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frondend Developer
+        Frondend Developer (intern)
         <span className="tracking-wide text-textGreen">- NinoHairs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">

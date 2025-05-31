@@ -15,19 +15,20 @@ const About = () => {
           <p>
             I’m a Frontend Developer passionate about building sleek,
             high-performance web applications that enhance user experiences.
-            With expertise in cutting-edge technologies, I transform complex
-            designs into seamless, responsive, and accessible interfaces.
+            With expertise in cutting-edge technologies and AI integration, I transform complex
+            designs into seamless, responsive, and accessible interfaces. I’m also committed to mentorship,
+            sharing knowledge and supporting others in their growth as developer journey.
           </p>
-          <p>
+          {/* <p>
             I thrive in collaborative environments, working closely with product
             managers, UX designers, and backend engineers to bring ideas to
             life.
-          </p>
-          <p>
+          </p> */}
+          {/* <p>
             I don&apos;t just write code, I build solutions, dedicated to
             creating digital experiences that not only engage users but also
             drive business growth. Let&apos;s build something amazing together!
-          </p>
+          </p> */}
           <p>A few technologies I have worked with:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
