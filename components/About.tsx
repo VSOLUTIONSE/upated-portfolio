@@ -17,7 +17,7 @@ const About = () => {
             high-performance web applications that enhance user experiences.
             With expertise in cutting-edge technologies and AI integration, I transform complex
             designs into seamless, responsive, and accessible interfaces. I’m also committed to mentorship,
-            sharing knowledge and supporting others in their growth as developer journey.
+            sharing knowledge and supporting others in their growth and developer journey.
           </p>
           {/* <p>
             I thrive in collaborative environments, working closely with product
