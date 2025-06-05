@@ -10,11 +10,11 @@ const ReactBD = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frontend Engineer
+        Frontend Developer
         <span className="tracking-wide text-textGreen">- NamuLabs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
-        Oct 2024 - in view
+        Oct 2024 - April 2025
       </p>
       <ul className="flex flex-col gap-3 mt-6">
         <li className="flex gap-2 text-base text-textDark">
