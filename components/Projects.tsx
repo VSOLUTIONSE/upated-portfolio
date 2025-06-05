@@ -7,7 +7,6 @@ import {
   piggy,
 } from "@/public/assets";
 import Image from "next/image";
-import { AiOutlineYoutube } from "react-icons/ai";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -21,7 +20,7 @@ const Projects = () => {
         <div className="flex flex-col gap-6 xl:flex-row">
           <a
             className="relative w-full h-auto xl:w-1/2 group"
-            href="https://nino.africa"
+            href="https://e-mart-qyyp.vercel.app/"
             target="_blank"
           >
             <div>
@@ -35,19 +34,17 @@ const Projects = () => {
           </a>
           <div className="z-10 flex flex-col items-end w-full gap-6 text-right xl:w-1/2 lgl:justify-between xl:-ml-16">
             <div>
-              <h3 className="text-2xl font-bold ">Nino Ecommerce app</h3>
+              <h3 className="text-2xl font-bold ">E-Mart app</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              NinoHair provides Africans women with the easiest and convenient
-              way to purchase luxury hairs, built the auth flow, admin dashboards
-              and integrated backend api&apos;s for overall app functionality.
+              An e-commerce platform that allows store owners to manage products, customize store settings, and interact with customers through a chat widget.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
               <li>Tailwind</li>
               <li>Redux</li>
               <li>Formik</li>
-              <li>MUI</li>
+              <li>Shadcn</li>
             </ul>
             <div className="flex gap-4 text-2xl">
               <a
