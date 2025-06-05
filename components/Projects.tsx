@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="flex gap-4 text-2xl">
               <a
                 className="duration-300 hover:text-textGreen"
-                href="https://nino.africa"
+                href="https://e-mart-qyyp.vercel.app/"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
