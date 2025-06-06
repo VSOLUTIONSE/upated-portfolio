@@ -13,7 +13,7 @@ const Google = () => {
         <span className="tracking-wide text-textGreen">- NinoHairs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
-      March 2024 - July 2024
+      March 2024 - July 2024, Nigeria
       </p>
       <ul className="flex flex-col gap-3 mt-6">
         <li className="flex gap-2 text-base text-textDark">

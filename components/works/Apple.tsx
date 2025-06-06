@@ -14,7 +14,7 @@ const Apple = () => {
         <span className="tracking-wide text-textGreen">- Tongston Group</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
-        Aug 2022 – Feb 2023
+        Aug 2022 – Feb 2023, Nigeria
       </p>
       <ul className="flex flex-col gap-3 mt-6">
         <li className="flex gap-2 text-base text-textDark">

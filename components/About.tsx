@@ -14,21 +14,20 @@ const About = () => {
         <div className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark">
           <p>
             I’m a Frontend Developer passionate about building sleek,
-            high-performance web applications that enhance user experiences.
-            With expertise in cutting-edge technologies and AI integration, I transform complex
-            designs into seamless, responsive, and accessible interfaces. I’m also committed to mentorship,
-            sharing knowledge and supporting others in their growth and developer journey.
+            high-performance web applications that enhance that don’t just scale but sell.
+            With expertise in cutting-edge frontend technologies and api integration, I transform complex
+            designs into seamless, responsive, and accessible interfaces. I’m also passionate about open source and contributing in tech communities.
           </p>
-          {/* <p>
+          <p>
             I thrive in collaborative environments, working closely with product
             managers, UX designers, and backend engineers to bring ideas to
             life.
-          </p> */}
-          {/* <p>
+          </p> 
+          <p>
             I don&apos;t just write code, I build solutions, dedicated to
             creating digital experiences that not only engage users but also
             drive business growth. Let&apos;s build something amazing together!
-          </p> */}
+          </p> 
           <p>A few technologies I have worked with:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
