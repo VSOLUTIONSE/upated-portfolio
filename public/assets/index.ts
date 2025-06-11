@@ -6,4 +6,15 @@ import noorShop from "./images/noorShop.png";
 import kinc from "./images/kinc.png";
 import piggy from "./images/piggy.png";
 import nino from "./images/nino.png";
-export { logo, profileImg, amazonImg,kinc, nino ,piggy,cyberImg, noorShop };
+import nino2 from "./images/nino2.png";
+export {
+  logo,
+  profileImg,
+  amazonImg,
+  kinc,
+  nino,
+  nino2,
+  piggy,
+  cyberImg,
+  noorShop,
+};

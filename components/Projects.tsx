@@ -3,6 +3,7 @@ import {
   cyberImg,
   kinc,
   nino,
+  nino2,
   noorShop,
   piggy,
 } from "@/public/assets";
@@ -17,6 +18,51 @@ const Projects = () => {
       <SectionTitle title="Some Things I have Built" titleNo="03" />
       {/* ============ project One Start here ================ */}
       <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
+        <div className="flex flex-col-reverse gap-6 xl:flex-row">
+          <div className="z-10 relative  flex flex-col items-end w-full gap-6 text-right xl:w-1/2 lgl:justify-between xl:-ml-16">
+            <div>
+              <h3 className="text-2xl font-bold ">NinoHairs</h3>
+            </div>
+            <p className="bg-[#112240] z-20 xl:ml-16 relative text-sm md:text-base p-2 md:p-6 rounded-md  ">
+              A startup-application that offers luxury hair for women via
+              installment plans. It allows users to browse products, manage
+              their accounts, and make payments. I worked on several features
+              including product management, user authentication, and dashboard
+            </p>
+            <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
+              <li>Nextjs</li>
+              <li>Tailwind</li>
+              <li>Redux</li>
+              <li>Formik</li>
+              <li>Tanstack query</li>
+              <li>MUI</li>
+            </ul>
+            <div className="flex gap-4 text-2xl">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://nino.africa"
+                target="_blank"
+              >
+                <RxOpenInNewWindow />
+              </a>
+            </div>
+          </div>
+          <a
+            className="relative w-full h-auto xl:w-1/2 group"
+            href="https://nino.africa"
+            target="_blank"
+          >
+            <div>
+              <Image
+                className="object-contain w-full h-full"
+                src={nino2}
+                alt="amazonImg"
+              />
+              <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
+            </div>
+          </a>
+        </div>
+
         <div className="flex flex-col gap-6 xl:flex-row">
           <a
             className="relative w-full h-auto xl:w-1/2 group"
@@ -37,7 +83,9 @@ const Projects = () => {
               <h3 className="text-2xl font-bold ">E-Mart app</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              An e-commerce platform that allows store owners to manage products, customize store settings, and interact with customers through a chat widget.
+              An e-commerce platform that allows store owners to manage
+              products, customize store settings, and interact with customers
+              through a chat widget.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
@@ -57,6 +105,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         {/* ============ project One End here ================== */}
         {/* ============ project Two Start here ================ */}
         <div className="flex flex-col gap-6 xl:flex-row-reverse">
