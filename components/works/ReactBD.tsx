@@ -21,25 +21,23 @@ const ReactBD = () => {
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Built intuitive, pixel-perfect user interfaces for decentralized
-          applications using Next.js, TypeScript, and Tailwind CSS.
+          Transforming Figma designs into sleek, functional, and pixel-perfect
+          interfaces for Blockchain Decentralized Applications (dApps), ensuring
+          seamless user experiences.
         </li>
         <li className="flex gap-2 text-base text-textDark">
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Refactored and optimized a legacy codebase, reducing load times by
-          20%. Developed and integrated new features into pre-existing
-          blockchain apps, improving user engagement by 15%.
+          Building and maintaining a scalable design system, creating reusable
+          UI components that enhance consistency and efficiency across projects.
         </li>
         <li className="flex gap-2 text-base text-textDark">
           <span className="mt-1 text-textGreen">
             <TiArrowForward />
           </span>
-          Designed and implemented a scalable design system, ensuring consistent
-          branding across all products. Collaborated cross-functionally with
-          developers, product designers, and project leads to meet tight project
-          deadlines.
+          Working closely with fellow developers, leveraging version control
+          (Git & GitHub) to maintain clean, efficient, and scalable codebases.
         </li>
       </ul>
     </motion.div>

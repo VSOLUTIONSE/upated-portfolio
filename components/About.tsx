@@ -15,19 +15,18 @@ const About = () => {
           <p>
             I’m a Frontend Developer passionate about building sleek,
             high-performance web applications that enhance that don’t just scale but sell.
-            With expertise in cutting-edge frontend technologies and api integration, I transform complex
-            designs into seamless, responsive, and accessible interfaces. I’m also passionate about open source and contributing in tech communities.
+            With expertise in cutting-edge frontend technologies and api integration, I have worked across key industries like blockchain, ecommerce and business where I transform visons into functional products. I’m also passionate.
           </p>
           <p>
             I thrive in collaborative environments, working closely with product
             managers, UX designers, and backend engineers to bring ideas to
             life.
           </p> 
-          <p>
+          {/* <p>
             I don&apos;t just write code, I build solutions, dedicated to
             creating digital experiences that not only engage users but also
             drive business growth. Let&apos;s build something amazing together!
-          </p> 
+          </p>  */}
           <p>A few technologies I have worked with:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
@@ -83,8 +82,9 @@ const About = () => {
               <span className="text-textGold">
                 <AiFillThunderbolt />
               </span>
-              Tailwindcss
+              Web3js/ethers.js
             </li>
+
           </ul>
         </div>
         <div className="relative w-full lgl:w-1/3 h-80 group">
