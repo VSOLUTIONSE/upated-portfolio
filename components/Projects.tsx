@@ -40,8 +40,7 @@ const Projects = () => {
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-16">
               Piggycell connects physical devices and users, to creating a
               revenue-sharing ecosystem accessible to all. Built the frontend
-              that integrates decentralized ownership, transparent
-              profit-sharing models, and enhanced community engagement.
+              that integrates soon-coming decentralized ownership,and enhanced community engagement.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
@@ -136,7 +135,7 @@ const Projects = () => {
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
               <li>Tailwind</li>
-              <li>Redux</li>
+              <li>Zustand</li>
               <li>Formik</li>
               <li>Tanstack query</li>
               <li>MUI</li>
