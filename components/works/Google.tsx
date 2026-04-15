@@ -9,8 +9,8 @@ const Google = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frondend Developer
-        <span className="tracking-wide text-textGreen">- NinoHairs</span>
+        Frontend Developer
+        <span className="tracking-wide text-textGreen">NinoHairs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
       March 2024 - July 2024, Nigeria

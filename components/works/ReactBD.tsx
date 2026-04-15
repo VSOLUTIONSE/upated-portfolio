@@ -10,8 +10,8 @@ const ReactBD = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frontend Developer
-        <span className="tracking-wide text-textGreen">- NamuLabs</span>
+        Senior Frontend Developer
+        <span className="tracking-wide text-textGreen">NamuLabs</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
         Oct 2024 - April 2025, Korea

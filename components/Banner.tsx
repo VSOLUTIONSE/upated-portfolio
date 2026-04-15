@@ -22,8 +22,8 @@ const Banner = () => {
         <span>
           Favour Emmanuel<span className="text-textGold lgl:text-7xl">.</span>
         </span>
-        <span className="mt-2 text-textDark lgl:text-5xl lgl:mt-4">
-          Let&apos;s build the future together
+<span className="mt-2 text-textDark lgl:text-5xl lgl:mt-4">
+          Senior Frontend Developer
         </span>
       </motion.h1>
       <motion.p
@@ -32,11 +32,11 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        The future isn’t just something we wait for—it’s something we create.
+        The future isn&apos;t just something we wait for. It&apos;s something we create.
         With every pixel, every interaction, and every seamless experience, I
         bring ideas to life through code.
         <br /><br/>
-        Let’s collaborate, innovate, and craft the next big thing—together. The
+        Let&apos;s collaborate, innovate, and craft the next big thing together. The
         future is ours to build!
       </motion.p>
       <a href="/assets/resume_cv.pdf" target="_blank">

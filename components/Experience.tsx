@@ -3,13 +3,15 @@ import SectionTitle from "./SectionTitle";
 import Apple from "./works/Apple";
 import Google from "./works/Google";
 import ReactBD from "./works/ReactBD";
+import Compass from "./works/Compass";
 
 const Experience = () => {
-  const [workReactbd, setWorkReactbd] = useState(true);
+  const [workReactbd, setWorkReactbd] = useState(false);
   const [workGoogle, setWorkGoogle] = useState(false);
   const [workApple, setWorkApple] = useState(false);
   const [workSplash, setWorkSplash] = useState(false);
   const [workAmazon, setWorkAmazon] = useState(false);
+  const [workCompass, setWorkCompass] = useState(true);
 
   const handleReactbd = () => {
     setWorkReactbd(true);
@@ -17,6 +19,7 @@ const Experience = () => {
     setWorkApple(false);
     setWorkSplash(false);
     setWorkAmazon(false);
+    setWorkCompass(false);
   };
 
   const handleGoogle = () => {
@@ -25,6 +28,7 @@ const Experience = () => {
     setWorkApple(false);
     setWorkSplash(false);
     setWorkAmazon(false);
+    setWorkCompass(false);
   };
 
   const handleApple = () => {
@@ -33,6 +37,7 @@ const Experience = () => {
     setWorkApple(true);
     setWorkSplash(false);
     setWorkAmazon(false);
+    setWorkCompass(false);
   };
   const handleSplash = () => {
     setWorkReactbd(false);
@@ -40,6 +45,7 @@ const Experience = () => {
     setWorkApple(false);
     setWorkSplash(true);
     setWorkAmazon(false);
+    setWorkCompass(false);
   };
   const handleAmazon = () => {
     setWorkReactbd(false);
@@ -47,6 +53,15 @@ const Experience = () => {
     setWorkApple(false);
     setWorkSplash(false);
     setWorkAmazon(true);
+    setWorkCompass(false);
+  };
+  const handleCompass = () => {
+    setWorkReactbd(false);
+    setWorkGoogle(false);
+    setWorkApple(false);
+    setWorkSplash(false);
+    setWorkAmazon(false);
+    setWorkCompass(true);
   };
   return (
     <section
@@ -56,6 +71,16 @@ const Experience = () => {
       <SectionTitle title="Where I have Worked" titleNo="" />
       <div className="flex flex-col w-full gap-16 mt-10 md:flex-row">
         <ul className="flex flex-col md:w-32">
+          <li
+            onClick={handleCompass}
+            className={`${
+              workCompass
+                ? "border-l-textGold text-textGold"
+                : "border-l-hoverColor text-textDark"
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+          >
+            Inner Compass
+          </li>
           <li
             onClick={handleReactbd}
             className={`${
@@ -87,6 +112,7 @@ const Experience = () => {
             Tongston Group
           </li>
         </ul>
+        {workCompass && <Compass />}
         {workReactbd && <ReactBD />}
         {workGoogle && <Google />}
         {workApple && <Apple />}

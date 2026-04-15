@@ -10,8 +10,8 @@ const Apple = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frontend Enginer
-        <span className="tracking-wide text-textGreen">- Tongston Group</span>
+        Frontend Engineer
+        <span className="tracking-wide text-textGreen">Tongston Group</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
         Aug 2022 – Feb 2023, Nigeria
