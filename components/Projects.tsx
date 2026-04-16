@@ -23,7 +23,7 @@ const Projects = () => {
         <div className="flex flex-col-reverse gap-6 xl:flex-row">
           <div className="z-10 relative  flex flex-col items-end w-full gap-6 text-right xl:w-1/2 lgl:justify-between xl:-ml-16">
             <div>
-              <h3 className="text-2xl font-bold ">VarySoft Technologies</h3>
+              <h3 className="text-2xl font-bold">VarySoft Technologies <span className="text-sm font-normal text-textDark ml-2">(still in dev)</span></h3>
             </div>
             <p className="bg-[#112240] z-20 xl:ml-16 relative text-sm md:text-base p-2 md:p-6 rounded-md  ">
               VarySoft Technologies is a systems-focused software and IT solutions agency that helps businesses, professionals, and organizations build and integrate digital tools that power their operations.
@@ -81,12 +81,10 @@ The company focuses on creating websites, business systems, payment workflows, a
           </a>
           <div className="z-10 flex flex-col items-start w-full gap-6 text-left xl:w-1/2 lgl:justify-between xl:-mr-16">
             <div>
-              <h3 className="text-2xl font-bold">VotagE</h3>
+              <h3 className="text-2xl font-bold">The Voltage Church</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md xl:-ml-16">
-              A social media platform that connects people through events and
-              gatherings. Built with a focus on user engagement, event
-              discovery, and community building features.
+              A modern, responsive church website built for The Voltage Church, a fast-growing ministry based in Benin City. The platform was designed to communicate the church's vision clearly while providing easy access to sermons, events, and community engagement.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
