@@ -66,11 +66,11 @@ The company focuses on creating websites, business systems, payment workflows, a
 
         <div className="flex flex-col gap-6 xl:flex-row">
           <a
-            className="relative w-full h-auto xl:w-1/2 group overflow-hidden"
+            className="relative w-full h-auto xl:w-1/2 group"
             href="https://the-votage-web-788c.vercel.app/home"
             target="_blank"
           >
-            <div className="w-full overflow-hidden">
+            <div>
               <Image
                 className="object-contain w-full h-full"
                 src={votage}
@@ -79,18 +79,17 @@ The company focuses on creating websites, business systems, payment workflows, a
               <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
             </div>
           </a>
-          <div className="z-10 flex flex-col items-start w-full gap-6 text-left xl:w-1/2 lgl:justify-between xl:-mr-16">
+          <div className="z-10 flex flex-col items-start xl:items-end w-full gap-6 text-left xl:text-right xl:w-1/2 xl:justify-between xl:-ml-16">
             <div>
               <h3 className="text-xl md:text-2xl font-bold">Votage Church</h3>
             </div>
-            <p className="bg-[#112240] text-sm md:text-base p-2 md:p-4 rounded-md">
+            <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
               A modern, responsive church website built for Votage Church, a fast-growing ministry based in Benin City. The platform was designed to communicate the church&apos;s vision clearly while providing easy access to sermons, events, and community engagement.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
               <li>Tailwind</li>
               <li>TypeScript</li>
-              <li>Framer Motion</li>
               <li>Clerk</li>
               <li>Paystack</li>
               <li>Web3 Forms</li>
