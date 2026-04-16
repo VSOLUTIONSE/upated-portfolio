@@ -14,6 +14,13 @@ const Archive = () => {
       </div>
       <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-2 xl:grid-cols-3 lgl:px-10">
         <ArchiveCard
+          title="Digital Marketer Portfolio"
+          des="A modern, sleek and performant portfolio for a high value Digital Marketer"
+          listItem={["Nextjs", "Tailwind CSS", "Framer Motion"]}
+          link="https://my-bee-s.vercel.app/"
+        />
+
+        <ArchiveCard
           title="The Review Library"
           des="A library for book lovers, for reading reviews on different categories of books and requesting reviews on unavailable books"
           listItem={["Reactjs", "firebase", "react-router"]}
