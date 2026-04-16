@@ -84,7 +84,7 @@ The company focuses on creating websites, business systems, payment workflows, a
               <h3 className="text-2xl font-bold">Votage Church</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md xl:-ml-16">
-              A modern, responsive church website built for Votage Church, a fast-growing ministry based in Benin City. The platform was designed to communicate the church's vision clearly while providing easy access to sermons, events, and community engagement.
+              A modern, responsive church website built for Votage Church, a fast-growing ministry based in Benin City. The platform was designed to communicate the church&apos;s vision clearly while providing easy access to sermons, events, and community engagement.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>

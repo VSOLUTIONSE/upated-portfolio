@@ -69,15 +69,15 @@ const Experience = () => {
       className="px-4 py-10 mx-auto max-w-containerxs lgl:py-24"
     >
       <SectionTitle title="Where I have Worked" titleNo="" />
-      <div className="flex flex-col w-full gap-16 mt-10 md:flex-row">
-        <ul className="flex flex-col md:w-32">
+      <div className="flex flex-col w-full gap-10 mt-10 md:gap-16 md:flex-row">
+        <ul className="flex flex-row overflow-x-auto pb-4 md:pb-0 md:w-32 md:flex-col">
           <li
             onClick={handleCompass}
             className={`${
               workCompass
                 ? "border-l-textGold text-textGold"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-6 md:px-8 font-medium whitespace-nowrap`}
           >
             Inner Compass
           </li>
@@ -87,7 +87,7 @@ const Experience = () => {
               workReactbd
                 ? "border-l-textGold text-textGold"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-6 md:px-8 font-medium whitespace-nowrap`}
           >
             NamuLabs
           </li>
@@ -97,7 +97,7 @@ const Experience = () => {
               workGoogle
                 ? "border-l-textGold text-textGold"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-6 md:px-8 font-medium whitespace-nowrap`}
           >
             NinoHairs
           </li>
@@ -107,7 +107,7 @@ const Experience = () => {
               workApple
                 ? "border-l-textGold text-textGold"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-6 md:px-8 font-medium whitespace-nowrap`}
           >
             Tongston Group
           </li>
