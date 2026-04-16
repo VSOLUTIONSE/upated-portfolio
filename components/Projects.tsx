@@ -66,7 +66,7 @@ The company focuses on creating websites, business systems, payment workflows, a
 
         <div className="flex flex-col gap-6 xl:flex-row">
           <a
-            className="relative w-full h-auto xl:w-1/2 group"
+            className="relative w-full h-auto xl:w-1/2 group overflow-hidden"
             href="https://the-votage-web-788c.vercel.app/home"
             target="_blank"
           >
@@ -79,9 +79,9 @@ The company focuses on creating websites, business systems, payment workflows, a
               <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
             </div>
           </a>
-          <div className="z-10 flex flex-col items-start w-full gap-6 text-left xl:w-1/2 lgl:justify-between xl:-mr-16">
+          <div className="z-10 flex flex-col items-start w-full gap-6 text-left xl:w-1/2 lgl:justify-between xl:-mr-16 px-2 md:px-0">
             <div>
-              <h3 className="text-2xl font-bold">Votage Church</h3>
+              <h3 className="text-xl md:text-2xl font-bold">Votage Church</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md xl:-ml-16">
               A modern, responsive church website built for Votage Church, a fast-growing ministry based in Benin City. The platform was designed to communicate the church&apos;s vision clearly while providing easy access to sermons, events, and community engagement.
