@@ -9,6 +9,7 @@ import nino from "./images/nino.png";
 import nino2 from "./images/nino2.png";
 import varysoft from "./images/varysoft.png";
 import votage from "./images/votage.png";
+import techCare from "./images/tech-care.png";
 export {
   logo,
   profileImg,
@@ -21,4 +22,5 @@ export {
   noorShop,
   varysoft,
   votage,
+  techCare,
 };

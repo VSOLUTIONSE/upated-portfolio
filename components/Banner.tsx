@@ -23,7 +23,7 @@ const Banner = () => {
           Favour Emmanuel<span className="text-textGold lgl:text-7xl">.</span>
         </span>
 <span className="mt-2 text-textDark lgl:text-5xl lgl:mt-4">
-          Senior Frontend Developer
+          Frontend Developer
         </span>
       </motion.h1>
       <motion.p

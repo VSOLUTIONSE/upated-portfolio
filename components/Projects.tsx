@@ -8,6 +8,7 @@ import {
   piggy,
   varysoft,
   votage,
+  techCare,
 } from "@/public/assets";
 import Image from "next/image";
 import { TbBrandGithub } from "react-icons/tb";
@@ -18,6 +19,57 @@ const Projects = () => {
   return (
     <section id="project" className="py-24 mx-auto max-w-container lgl:px-20">
       <SectionTitle title="Some Things I have Built" titleNo="03" />
+      {/* HealthDashboard Project */}
+      <div className="flex flex-col gap-6 xl:flex-row">
+        <a
+          className="relative w-full h-auto xl:w-1/2 group"
+href="https://bphealthdashboard.vercel.app/"
+            target="_blank"
+          >
+            <div>
+              <Image
+                className="object-contain w-full h-full"
+                src={techCare}
+                alt="HealthDashboard"
+              />
+              <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
+            </div>
+          </a>
+          <div className="z-10 flex flex-col items-start xl:items-end w-full gap-6 text-left xl:text-right xl:w-1/2 xl:justify-between xl:-ml-16">
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold">HealthDashboard</h3>
+            </div>
+            <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
+              A React-based medical dashboard for healthcare professionals to view patient information, diagnosis history, vital signs, diagnostics, and lab results.
+            </p>
+            <ul className="flex flex-wrap justify-end gap-1 text-xs tracking-wide md:text-sm font-titleFont md:gap-2 text-textDark">
+              <li>React 19</li>
+              <li>TypeScript</li>
+              <li>Tailwind</li>
+              <li>Framer Motion</li>
+              <li>Recharts</li>
+              <li>React Query</li>
+              <li>Radix UI</li>
+            </ul>
+            <div className="flex gap-4 text-2xl">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://github.com/dennisdoesports-coder/healthdashboard"
+                target="_blank"
+              >
+                <TbBrandGithub />
+              </a>
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://bphealthdashboard.vercel.app/"
+                target="_blank"
+              >
+              <RxOpenInNewWindow />
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* ============ project One Start here ================ */}
       <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
         <div className="flex flex-col-reverse gap-6 xl:flex-row">
@@ -41,7 +93,7 @@ The company focuses on creating websites, business systems, payment workflows, a
             <div className="flex gap-4 text-2xl">
               <a
                 className="duration-300 hover:text-textGreen"
-                href="https://nino.africa"
+                href="https://varysofttechnologies.vercel.app/"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
