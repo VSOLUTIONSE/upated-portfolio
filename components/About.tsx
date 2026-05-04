@@ -1,4 +1,4 @@
-import { profileImg } from "@/public/assets";
+import { bioImg } from "@/public/assets";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -88,8 +88,8 @@ const About = () => {
               <Image
                 className="object-cover h-full"
                 style={{ borderRadius: "62% 38% 21% 79% / 50% 38% 62% 50%" }}
-                src={profileImg}
-                alt="profileImg"
+                src={bioImg}
+                alt="bioImg"
               />
               <div
                 style={{ borderRadius: "62% 38% 21% 79% / 50% 38% 62% 50%" }}
