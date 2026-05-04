@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col-reverse gap-16 lgl:flex-row">
         <div className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark">
           <p>
-            I'm a Seasoned Frontend Developer passionate about building sleek,
+            I&apos;m a Seasoned Frontend Developer passionate about building sleek,
             high-performance web applications that enhance that don&apos;t just scale but sell.
             With expertise in cutting-edge frontend technologies and api integration, I have worked across key industries like blockchain, ecommerce and business where I transform visons into functional products. I&apos;m also passionate.
           </p>
