@@ -39,7 +39,7 @@ const Banner = () => {
         Let&apos;s collaborate, innovate, and craft the next big thing together. The
         future is ours to build!
       </motion.p>
-      <a href="/assets/resume_cv.pdf" target="_blank">
+      <a href="/assets/cv.pdf" target="_blank">
         <motion.button
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
