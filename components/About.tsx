@@ -1,4 +1,4 @@
-import { profileImg } from "@/public/assets";
+import { bioImg } from "@/public/assets";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -13,7 +13,7 @@ const About = () => {
       <div className="flex flex-col-reverse gap-16 lgl:flex-row">
         <div className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark">
           <p>
-            I&apos;m a Senior Frontend Developer passionate about building sleek,
+            I&apos;m a Seasoned Frontend Developer passionate about building sleek,
             high-performance web applications that enhance that don&apos;t just scale but sell.
             With expertise in cutting-edge frontend technologies and api integration, I have worked across key industries like blockchain, ecommerce and business where I transform visons into functional products. I&apos;m also passionate.
           </p>
@@ -88,8 +88,8 @@ const About = () => {
               <Image
                 className="object-cover h-full"
                 style={{ borderRadius: "62% 38% 21% 79% / 50% 38% 62% 50%" }}
-                src={profileImg}
-                alt="profileImg"
+                src={bioImg}
+                alt="bioImg"
               />
               <div
                 style={{ borderRadius: "62% 38% 21% 79% / 50% 38% 62% 50%" }}
