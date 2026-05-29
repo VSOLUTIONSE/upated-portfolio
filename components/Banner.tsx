@@ -1,11 +1,23 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const Banner = () => {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], [0, 80]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.6]);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="flex flex-col gap-4 py-10 mx-auto max-w-contentContainer mdl:py-24 lgl:gap-8 mdl:px-10 xl:px-4"
     >
       <motion.h3
+        style={{ y, opacity }}
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
@@ -14,6 +26,7 @@ const Banner = () => {
         Hello there!, I&apos;m
       </motion.h3>
       <motion.h1
+        style={{ y, opacity }}
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
@@ -27,6 +40,7 @@ const Banner = () => {
         </span>
       </motion.h1>
       <motion.p
+        style={{ y: useTransform(scrollYProgress, [0, 1], [0, 40]), opacity }}
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
@@ -41,6 +55,7 @@ const Banner = () => {
       </motion.p>
       <a href="/assets/cv.pdf" target="_blank">
         <motion.button
+          style={{ y: useTransform(scrollYProgress, [0, 1], [0, 20]), opacity }}
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}

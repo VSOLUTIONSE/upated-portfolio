@@ -2,6 +2,7 @@ import { bioImg } from "@/public/assets";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -11,78 +12,73 @@ const About = () => {
     >
       <SectionTitle title="About Me" titleNo="" />
       <div className="flex flex-col-reverse gap-16 lgl:flex-row">
-        <div className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark">
-          <p>
-            I&apos;m a Seasoned Frontend Developer passionate about building sleek,
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="flex flex-col w-full gap-4 text-base font-medium lgl:w-2/3 text-textDark"
+        >
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            I&apos;m a Frontend Developer passionate about building sleek,
             high-performance web applications that enhance that don&apos;t just scale but sell.
             With expertise in cutting-edge frontend technologies and api integration, I have worked across key industries like blockchain, ecommerce and business where I transform visons into functional products. I&apos;m also passionate.
-          </p>
-          <p>
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             I thrive in collaborative environments, working closely with product
             managers, UX designers, and backend engineers to bring ideas to
             life.
-          </p> 
-          <p>A few technologies I have worked with:</p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              JavaScript (ES6+)
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              Next.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              React
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              Node.js
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              TypeScript
-            </li>
-            
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-             Git/Github
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              Redux
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              TanStack Query
-            </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGold">
-                <AiFillThunderbolt />
-              </span>
-              Web3js/ethers.js
-            </li>
-
-          </ul>
-        </div>
-        <div className="relative w-full lgl:w-1/3 h-80 group">
+          </motion.p> 
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >A few technologies I have worked with:</motion.p>
+          <motion.ul
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              visible: { transition: { staggerChildren: 0.05 } },
+            }}
+            className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6"
+          >
+            {["JavaScript (ES6+)", "Next.js", "React", "Node.js", "TypeScript", "Git/Github", "Redux", "TanStack Query", "Web3js/ethers.js", "PostgreSQL", "NextAuth", "OAuth", "Docker"].map((skill) => (
+              <motion.li
+                key={skill}
+                variants={{
+                  hidden: { opacity: 0, x: -15 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className="flex items-center gap-2"
+              >
+                <span className="text-textGold">
+                  <AiFillThunderbolt />
+                </span>
+                {skill}
+              </motion.li>
+            ))}
+          </motion.ul>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+          className="relative w-full lgl:w-1/3 h-80 group"
+        >
           <div className="absolute w-full rounded-lg h-80 -left-6 -top-6 ">
             <div className="relative z-20 flex w-full h-full pl-6 lgl:pl-0">
               <Image
@@ -101,7 +97,7 @@ const About = () => {
             style={{ borderRadius: "62% 38% 21% 79% / 50% 38% 62% 50%" }}
             className="hidden w-full transition-transform duration-300 border-2 rounded-md bg-textGold lgl:inline-flex h-80 border-[#FFBB00] group-hover:-translate-x-2 group-hover:-translate-y-2"
           ></div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
