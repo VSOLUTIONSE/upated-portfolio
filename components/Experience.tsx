@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import SectionTitle from "./SectionTitle";
 import Apple from "./works/Apple";
 import Google from "./works/Google";
@@ -64,54 +65,45 @@ const Experience = () => {
     setWorkCompass(true);
   };
   return (
-    <section
+    < section
       id="experience"
       className="px-4 py-10 mx-auto max-w-containerxs lgl:py-24"
     >
       <SectionTitle title="Where I have Worked" titleNo="" />
       <div className="flex flex-col w-full gap-16 mt-10 md:flex-row">
-        <ul className="flex flex-col md:w-32">
-          <li
-            onClick={handleCompass}
-            className={`${
-              workCompass
-                ? "border-l-textGold text-textGold"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Inner Compass
-          </li>
-          <li
-            onClick={handleReactbd}
-            className={`${
-              workReactbd
-                ? "border-l-textGold text-textGold"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            NamuLabs
-          </li>
-          <li
-            onClick={handleGoogle}
-            className={`${
-              workGoogle
-                ? "border-l-textGold text-textGold"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            NinoHairs
-          </li>
-          <li
-            onClick={handleApple}
-            className={`${
-              workApple
-                ? "border-l-textGold text-textGold"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Tongston Group
-          </li>
-        </ul>
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: { transition: { staggerChildren: 0.1 } },
+          }}
+          className="flex flex-col md:w-32"
+        >
+          {[
+            { label: "Inner Compass", active: workCompass, onClick: handleCompass },
+            { label: "NamuLabs", active: workReactbd, onClick: handleReactbd },
+            { label: "NinoHairs", active: workGoogle, onClick: handleGoogle },
+            { label: "Tongston Group", active: workApple, onClick: handleApple },
+          ].map((tab) => (
+            <motion.li
+              key={tab.label}
+              variants={{
+                hidden: { opacity: 0, x: -20 },
+                visible: { opacity: 1, x: 0 },
+              }}
+              onClick={tab.onClick}
+              className={`${
+                tab.active
+                  ? "border-l-textGold text-textGold"
+                  : "border-l-hoverColor text-textDark"
+              } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+            >
+              {tab.label}
+            </motion.li>
+          ))}
+        </motion.ul>
         {workCompass && <Compass />}
         {workReactbd && <ReactBD />}
         {workGoogle && <Google />}

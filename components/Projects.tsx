@@ -14,13 +14,20 @@ import Image from "next/image";
 import { TbBrandGithub } from "react-icons/tb";
 import SectionTitle from "./SectionTitle";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <section id="project" className="py-24 mx-auto max-w-container lgl:px-20">
       <SectionTitle title="Some Things I have Built" titleNo="03" />
       {/* HealthDashboard Project */}
-      <div className="flex flex-col gap-6 xl:flex-row">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="flex flex-col gap-6 xl:flex-row"
+      >
         <a
           className="relative w-full h-auto xl:w-1/2 group"
 href="https://bphealthdashboard.vercel.app/"
@@ -40,7 +47,7 @@ href="https://bphealthdashboard.vercel.app/"
               <h3 className="text-xl md:text-2xl font-bold">HealthDashboard</h3>
             </div>
             <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-              A React-based medical dashboard for healthcare professionals to view patient information, diagnosis history, vital signs, diagnostics, and lab results.
+              A Web-based Medical Record Tracking Dashboard for healthcare professionals to view patient information, diagnosis history, vital signs, diagnostics, and lab results.
             </p>
             <ul className="flex flex-wrap justify-end gap-1 text-xs tracking-wide md:text-sm font-titleFont md:gap-2 text-textDark">
               <li>React 19</li>
@@ -68,11 +75,17 @@ href="https://bphealthdashboard.vercel.app/"
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* ============ project One Start here ================ */}
       <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
-        <div className="flex flex-col-reverse gap-6 xl:flex-row">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col-reverse gap-6 xl:flex-row"
+        >
           <div className="z-10 relative  flex flex-col items-end w-full gap-6 text-right xl:w-1/2 lgl:justify-between xl:-ml-16">
             <div>
               <h3 className="text-2xl font-bold">VarySoft Technologies</h3>
@@ -83,12 +96,12 @@ href="https://bphealthdashboard.vercel.app/"
 The company focuses on creating websites, business systems, payment workflows, and custom applications that simplify processes, improve efficiency, and support scalable growth.
             </p>
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
-              <li>Nextjs</li>
+              <li>React(Vite)</li>
               <li>Tailwind</li>
-              <li>Zustand</li>
-              <li>Formik</li>
-              <li>Tanstack query</li>
-              <li>MUI</li>
+              <li>Gsap</li>
+              <li>NextAuth</li>
+              <li>NeonDB</li>
+              <li>admin panel</li>
             </ul>
             <div className="flex gap-4 text-2xl">
               <a
@@ -114,9 +127,15 @@ The company focuses on creating websites, business systems, payment workflows, a
               <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
             </div>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col gap-6 xl:flex-row">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-6 xl:flex-row"
+        >
           <a
             className="relative w-full h-auto xl:w-1/2 group"
             href="https://the-votage-web-788c.vercel.app/home"
@@ -141,11 +160,10 @@ The company focuses on creating websites, business systems, payment workflows, a
             <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
               <li>Nextjs</li>
               <li>Tailwind</li>
-              <li>TypeScript</li>
-              <li>Clerk</li>
-              <li>Paystack</li>
-              <li>Web3 Forms</li>
-              <li>GSAP</li>
+              <li>NextAuth</li>
+              <li>PostgresDB</li>
+              <li>chartjs</li>
+              <li>Framer Motion</li>
             </ul>
             <div className="flex gap-4 text-2xl">
               <a
@@ -157,7 +175,7 @@ The company focuses on creating websites, business systems, payment workflows, a
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* <div className="flex flex-col gap-6 xl:flex-row">
           <a
@@ -201,7 +219,13 @@ The company focuses on creating websites, business systems, payment workflows, a
             </div>
           </div>
         </div> */}
-        <div className="flex flex-col gap-6 xl:flex-row-reverse">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-6 xl:flex-row-reverse"
+        >
           <a
             className="relative w-full h-auto xl:w-1/2 group"
             href="https://piggycell-nextjs.vercel.app"
@@ -251,10 +275,16 @@ The company focuses on creating websites, business systems, payment workflows, a
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/* ============ project Two End here ================== */}
         {/* ============ project Three Start here ============== */}
-        <div className="flex flex-col gap-6 xl:flex-row">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-6 xl:flex-row"
+        >
           <a
             className="relative w-full h-auto xl:w-1/2 group"
             href="https://kinc-app.vercel.app"
@@ -303,7 +333,7 @@ The company focuses on creating websites, business systems, payment workflows, a
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* ============ project One End here ================== */}
         {/* ============ project Two Start here ================ */}

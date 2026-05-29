@@ -10,7 +10,7 @@ const Apple = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 text-xl font-medium font-titleFont">
-        Frontend Engineer
+        Web Developer
         <span className="tracking-wide text-textGreen">Tongston Group</span>
       </h3>
       <p className="mt-1 text-sm font-medium text-textDark">
