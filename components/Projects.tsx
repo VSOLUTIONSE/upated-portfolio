@@ -9,6 +9,7 @@ import {
   varysoft,
   votage,
   techCare,
+  beevent,
 } from "@/public/assets";
 import Image from "next/image";
 import { TbBrandGithub } from "react-icons/tb";
@@ -20,16 +21,76 @@ const Projects = () => {
   return (
     <section id="project" className="py-24 mx-auto max-w-container lgl:px-20">
       <SectionTitle title="Some Things I have Built" titleNo="03" />
-      {/* HealthDashboard Project */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="flex flex-col gap-6 xl:flex-row"
-      >
-        <a
-          className="relative w-full h-auto xl:w-1/2 group"
+      {/* ============ BeeVent Halls ================ */}
+      <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col-reverse gap-6 xl:flex-row"
+        >
+          <div className="z-10 relative  flex flex-col items-end w-full gap-6 text-right xl:w-1/2 lgl:justify-between xl:-ml-16">
+            <div>
+              <h3 className="text-2xl font-bold">BeeVent Halls</h3>
+              <p className="text-xs font-semibold tracking-wide font-titleFont text-textGreen">
+                Event Centre Booking Platform
+              </p>
+            </div>
+            <p className="bg-[#112240] z-20 xl:ml-16 relative text-sm md:text-base p-2 md:p-6 rounded-md">
+              A full-stack event venue booking platform for managing reservations, packages, add-on services, payments, and staff operations. Features multi-step booking with date selection, package choice, and Paystack payments.
+            </p>
+            <ul className="flex justify-between gap-2 text-xs tracking-wide md:text-sm font-titleFont md:gap-5 text-textDark">
+              <li>React 19</li>
+              <li>TypeScript</li>
+              <li>Next.js 16</li>
+              <li>Tailwind</li>
+              <li>Drizzle ORM</li>
+              <li>NeonDB</li>
+            </ul>
+            <div className="flex gap-4 text-2xl">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://github.com/VSOLUTIONSE/beevent"
+                target="_blank"
+              >
+                <TbBrandGithub />
+              </a>
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://beevent-now-one.vercel.app/"
+                target="_blank"
+              >
+                <RxOpenInNewWindow />
+              </a>
+            </div>
+          </div>
+          <a
+            className="relative w-full h-auto xl:w-1/2 group"
+            href="https://beevent-now-one.vercel.app/"
+            target="_blank"
+          >
+            <div>
+              <Image
+                className="object-contain w-full h-full"
+                src={beevent}
+                alt="BeeVent Halls"
+              />
+              <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
+            </div>
+          </a>
+        </motion.div>
+
+        {/* HealthDashboard Project */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-6 xl:flex-row"
+        >
+          <a
+            className="relative w-full h-auto xl:w-1/2 group"
 href="https://bphealthdashboard.vercel.app/"
             target="_blank"
           >
@@ -77,8 +138,6 @@ href="https://bphealthdashboard.vercel.app/"
         </div>
       </motion.div>
 
-      {/* ============ project One Start here ================ */}
-      <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
