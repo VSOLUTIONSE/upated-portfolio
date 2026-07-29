@@ -10,6 +10,7 @@ import {
   votage,
   techCare,
   beevent,
+  salePulse,
 } from "@/public/assets";
 import Image from "next/image";
 import { TbBrandGithub } from "react-icons/tb";
@@ -21,8 +22,60 @@ const Projects = () => {
   return (
     <section id="project" className="py-24 mx-auto max-w-container lgl:px-20">
       <SectionTitle title="Some Things I have Built" titleNo="03" />
-      {/* ============ BeeVent Halls ================ */}
+      {/* ============ SalesPulse ================ */}
       <div className="flex flex-col items-center justify-center w-full mt-10 gap-28">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col gap-6 xl:flex-row"
+        >
+          <a
+            className="relative w-full h-auto xl:w-1/2 group"
+            href="https://shop-pulse-tau.vercel.app/"
+            target="_blank"
+          >
+            <div>
+              <Image
+                className="object-contain w-full h-full"
+                src={salePulse}
+                alt="SalesPulse"
+              />
+              <div className="absolute top-0 left-0 w-full h-full duration-300 rounded-lg bg-textGreen/10 group-hover:bg-transparent"></div>
+            </div>
+          </a>
+          <div className="z-10 flex flex-col items-start xl:items-end w-full gap-6 text-left xl:text-right xl:w-1/2 xl:justify-between xl:-ml-16">
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold">SalesPulse</h3>
+              <p className="text-xs font-semibold tracking-wide font-titleFont text-textGreen">
+                Point of Sale & Inventory Management System
+              </p>
+            </div>
+            <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
+              A Point of Sale & Inventory Management System with role-based access for Nigerian retail shops. Features a POS terminal with cash, transfer, card, and credit payments, inventory tracking with low-stock alerts, customer credit management, expense tracking, and AI-powered business reports and chat.
+            </p>
+            <ul className="flex flex-wrap justify-end gap-1 text-xs tracking-wide md:text-sm font-titleFont md:gap-2 text-textDark">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>Convex</li>
+              <li>Clerk</li>
+              <li>AI SDK</li>
+              <li>Tailwind CSS</li>
+            </ul>
+            <div className="flex gap-4 text-2xl">
+              <a
+                className="duration-300 hover:text-textGreen"
+                href="https://shop-pulse-tau.vercel.app/"
+                target="_blank"
+              >
+                <RxOpenInNewWindow />
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* ============ BeeVent Halls ================ */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

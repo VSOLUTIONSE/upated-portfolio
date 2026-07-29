@@ -12,6 +12,7 @@ import varysoft from "./images/varysoft.png";
 import votage from "./images/votage.png";
 import techCare from "./images/tech-care.png";
 import beevent from "./images/beevent.png";
+import salePulse from "./images/sales-pulse.png";
 export {
   logo,
   profileImg,
@@ -27,4 +28,5 @@ export {
   votage,
   techCare,
   beevent,
+  salePulse,
 };
