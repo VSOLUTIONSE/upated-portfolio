@@ -250,7 +250,7 @@ The company focuses on creating websites, business systems, payment workflows, a
         >
           <a
             className="relative w-full h-auto xl:w-1/2 group"
-            href="https://the-votage-web-788c.vercel.app/home"
+            href="https://thevotagechurch.org/"
             target="_blank"
           >
             <div>
@@ -280,7 +280,7 @@ The company focuses on creating websites, business systems, payment workflows, a
             <div className="flex gap-4 text-2xl">
               <a
                 className="duration-300 hover:text-textGreen"
-                href="https://the-votage-web-788c.vercel.app/home"
+                href="https://thevotagechurch.org/"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
